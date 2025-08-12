@@ -1,0 +1,24 @@
+{
+  "name": "core",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build --dotenv .env.production",
+    "build:dev": "nuxt build --dotenv .env",
+    "build:staging": "nuxt build --dotenv .env.staging",
+    "dev": "nuxt dev --dotenv .env",
+    "generate": "nuxt generate --dotenv .env.production",
+    "generate:dev": "nuxt generate --dotenv .env",
+    "generate:staging": "nuxt generate --dotenv .env.staging",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "clean": "rimraf .nuxt .output node_modules"
+  },
+  "dependencies": {
+    "@nuxt/icon": "2.0.0",
+    "@nuxt/image": "1.11.0",
+    "nuxt": "^4.0.3",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  }
+}

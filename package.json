@@ -1,0 +1,21 @@
+{
+  "name": "wellmed-clinic",
+  "version": "1.0.0",
+  "description": "Wellmed Clinic",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev": "pnpm --filter=core dev",
+    "build": "pnpm --filter=core build",
+    "build:dev": "pnpm --filter=core build:dev",
+    "build:staging": "pnpm --filter=core build:staging",
+    "generate": "pnpm --filter=core generate",
+    "clean:all": "pnpm -r clean && rimraf .nuxt .output node_modules"
+  },
+  "workspaces": [
+    "core",
+    "layers/*"
+  ],
+  "keywords": [],
+  "author": "Fajri Iqbal Muharrom Setiadi",
+  "license": "ISC"
+}

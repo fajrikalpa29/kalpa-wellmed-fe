@@ -1,0 +1,19 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@import "./fonts/_public-sans.css";
+@import "./components/_box.css";
+@import "./components/_global.css";
+@import "./components/_image-fit.css";
+@import "./components/_scrollbar-hidden.css";
+@import "./components/_typing-dots.css";
+@import "./components/_zoom-in.css";
+@import "primeicons/primeicons.css";
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
