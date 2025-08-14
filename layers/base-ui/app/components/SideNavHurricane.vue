@@ -18,7 +18,14 @@ const compactMenuOnHover = ref(false);
 const activeMobileMenu = ref(false);
 const route: Route = useRoute();
 const router = useRouter();
-let formattedMenu = ref<Array<FormattedMenu | string>>([]);
+let formattedMenu = ref<Array<FormattedMenu | string>>([
+    {
+        "title": "Dashboard",
+        "icon": "pi pi-home",
+        "pageName": "index"
+
+    }
+]);
 const setFormattedMenu = (
     computedFormattedMenu: Array<FormattedMenu | string>
 ) => {
@@ -26,7 +33,14 @@ const setFormattedMenu = (
 };
 const menuStore = useMenuStore();
 // const { getMenus } = storeToRefs(useAuthStore());
-const menu = computed(() => []);
+const menu = computed(() => [
+    {
+        "title": "Dashboard",
+        "icon": "pi pi-home",
+        "pageName": "index"
+
+    }
+]);
 
 provide<ProvideForceActiveMenu>("forceActiveMenu", (pageName: string) => {
     forceActiveMenu(route, pageName);
@@ -114,7 +128,7 @@ onMounted(() => {
                 </a>
             </div>
             <div ref="scrollableRef" :class="[
-                'w-full h-full z-20 px-5 mt-3.5 overflow-y-auto overflow-x-hidden pb-3 [-webkit-mask-image:-webkit-linear-gradient(top,rgba(0,0,0,0),black_30px)] [&:-webkit-scrollbar]:w-0 [&:-webkit-scrollbar]:bg-transparent',
+                'w-full h-full z-20 px-5 mt-5 overflow-y-auto overflow-x-hidden pb-3 [-webkit-mask-image:-webkit-linear-gradient(top,rgba(0,0,0,0),black_30px)] [&:-webkit-scrollbar]:w-0 [&:-webkit-scrollbar]:bg-transparent',
                 '[&_.simplebar-content]:p-0 [&_.simplebar-track.simplebar-vertical]:w-[10px] [&_.simplebar-track.simplebar-vertical]:mr-0.5 [&_.simplebar-track.simplebar-vertical_.simplebar-scrollbar]:before:bg-slate-400/30',
             ]">
                 <ul class="scrollable">

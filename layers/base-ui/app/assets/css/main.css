@@ -1,6 +1,7 @@
 @layer tailwind-base, primevue, tailwind-utilities;
 
-@import "./fonts/_public-sans.css";
+/* @import "./fonts/_public-sans.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap');
 @import "./components/_box.css";
 @import "./components/_global.css";
 @import "./components/_image-fit.css";
@@ -9,11 +10,154 @@
 @import "./components/_zoom-in.css";
 @import "primeicons/primeicons.css";
 
+:root {
+  --p-primary-50: rgb(var(--color-primary) / 0.1);
+  --p-primary-100: rgb(var(--color-primary) / 0.2);
+  --p-primary-200: rgb(var(--color-primary) / 0.3);
+  --p-primary-300: rgb(var(--color-primary) / 0.4);
+  --p-primary-400: rgb(var(--color-primary) / 0.5);
+  --p-primary-500: rgb(var(--color-primary));
+  --p-primary-600: rgb(var(--color-primary) / 0.8);
+  --p-primary-700: rgb(var(--color-primary) / 0.9);
+  --p-primary-800: rgb(var(--color-primary) / 1);
+  --p-primary-900: rgb(var(--color-primary) / 1.1);
+  --p-secondary-50: rgb(var(--color-secondary) / 0.1);
+  --p-secondary-100: rgb(var(--color-secondary) / 0.2);
+  --p-secondary-200: rgb(var(--color-secondary) / 0.3);
+  --p-secondary-300: rgb(var(--color-secondary) / 0.4);
+  --p-secondary-400: rgb(var(--color-secondary) / 0.5);
+  --p-secondary-500: rgb(var(--color-secondary));
+  --p-secondary-600: rgb(var(--color-secondary) / 0.8);
+  --p-secondary-700: rgb(var(--color-secondary) / 0.9);
+  --p-secondary-800: rgb(var(--color-secondary) / 1);
+  --p-secondary-900: rgb(var(--color-secondary) / 1.1);
+  --p-danger-50: rgb(var(--color-danger) / 0.1);
+  --p-danger-100: rgb(var(--color-danger) / 0.2);
+  --p-danger-200: rgb(var(--color-danger) / 0.3);
+  --p-danger-300: rgb(var(--color-danger) / 0.4);
+  --p-danger-400: rgb(var(--color-danger) / 0.5);
+  --p-danger-500: rgb(var(--color-danger));
+  --p-danger-600: rgb(var(--color-danger) / 0.8);
+  --p-danger-700: rgb(var(--color-danger) / 0.9);
+  --p-danger-800: rgb(var(--color-danger) / 1);
+  --p-danger-900: rgb(var(--color-danger) / 1.1);
+  --p-warning-50: rgb(var(--color-warning) / 0.1);
+  --p-warning-100: rgb(var(--color-warning) / 0.2);
+  --p-warning-200: rgb(var(--color-warning) / 0.3);
+  --p-warning-300: rgb(var(--color-warning) / 0.4);
+  --p-warning-400: rgb(var(--color-warning) / 0.5);
+  --p-warning-500: rgb(var(--color-warning));
+  --p-warning-600: rgb(var(--color-warning) / 0.8);
+  --p-warning-700: rgb(var(--color-warning) / 0.9);
+  --p-warning-800: rgb(var(--color-warning) / 1);
+  --p-warning-900: rgb(var(--color-warning) / 1.1);
+  --p-inputtext-border-radius: 0.5rem;
+  /* --p-button-primary-color: var(--p-primary-500);
+  --p-button-primary-hover-color: var(--p-primary-600);
+  --p-button-primary-active-color: var(--p-primary-700);
+  --p-button-secondary-color: var(--p-secondary-500);
+  --p-button-secondary-hover-color: var(--p-secondary-600);
+  --p-button-secondary-active-color: var(--p-secondary-700);
+  --p-button-danger-color: var(--p-danger-500);
+  --p-button-danger-hover-color: var(--p-danger-600);
+  --p-button-danger-active-color: var(--p-danger-700);
+  --p-button-warning-color: var(--p-warning-500);
+  --p-button-warning-hover-color: var(--p-warning-600);
+  --p-button-warning-active-color: var(--p-warning-700);
+  --p-button-text-primary-color: var(--p-surface-0);
+  --p-button-text-secondary-color: var(--p-surface-0);
+  --p-button-text-danger-color: var(--p-surface-0);
+  --p-button-text-warning-color: var(--p-surface-0);
+  --p-button-text-primary-hover-color: var(--p-surface-0);
+  --p-button-text-secondary-hover-color: var(--p-surface-0);
+  --p-button-text-danger-hover-color: var(--p-surface-0);
+  --p-button-text-warning-hover-color: var(--p-surface-0);
+  --p-button-text-primary-active-color: var(--p-surface-0);
+  --p-button-text-secondary-active-color: var(--p-surface-0);
+  --p-button-text-danger-active-color: var(--p-surface-0);
+  --p-button-text-warning-active-color: var(--p-surface-0); */
+
+  /* Surface Colors */
+  /* --p-surface-0: rgb(var(--color-surface-0));
+    --p-surface-50: rgb(var(--color-surface-50, 250, 250, 250));
+    --p-surface-100: rgb(var(--color-surface-100, 244, 244, 245));
+    --p-surface-200: rgb(var(--color-surface-200, 228, 228, 231));
+    --p-surface-300: rgb(var(--color-surface-300, 212, 212, 216));
+    --p-surface-400: rgb(var(--color-surface-400, 161, 161, 170));
+    --p-surface-500: rgb(var(--color-surface-500, 113, 113, 122));
+    --p-surface-600: rgb(var(--color-surface-600, 82, 82, 91));
+    --p-surface-700: rgb(var(--color-surface-700));
+    --p-surface-800: rgb(var(--color-surface-800, 39, 39, 42));
+    --p-surface-900: rgb(var(--color-surface-900, 24, 24, 27)); */
+}
+
+/* Light Theme Colors */
+:root {
+  --p-primary-color: var(--p-primary-500);
+  --p-primary-hover-color: var(--p-primary-600);
+  --p-primary-active-color: var(--p-primary-700);
+  --p-text-color: var(--p-surface-700);
+  --p-content-border-color: var(--p-surface-200);
+  --p-secondary-color: var(--p-secondary-500);
+  --p-secondary-hover-color: var(--p-secondary-600);
+  --p-secondary-active-color: var(--p-secondary-700);
+  --p-secondary-text-color: var(--p-surface-700);
+  --p-secondary-content-border-color: var(--p-surface-200);
+  --p-danger-color: var(--p-danger-500);
+  --p-danger-hover-color: var(--p-danger-600);
+  --p-danger-active-color: var(--p-danger-700);
+  --p-danger-text-color: var(--p-surface-700);
+  --p-danger-content-border-color: var(--p-surface-200);
+  --p-warning-color: var(--p-warning-500);
+  --p-warning-hover-color: var(--p-warning-600);
+  --p-warning-active-color: var(--p-warning-700);
+  --p-warning-text-color: var(--p-surface-700);
+  --p-warning-content-border-color: var(--p-surface-200);
+  --p-inputtext-border-radius: 0.5rem;
+  /* --p-button-primary-color: var(--p-primary-500);
+  --p-button-primary-hover-color: var(--p-primary-600);
+  --p-button-primary-active-color: var(--p-primary-700);
+  --p-button-secondary-color: var(--p-secondary-500);
+  --p-button-secondary-hover-color: var(--p-secondary-600);
+  --p-button-secondary-active-color: var(--p-secondary-700);
+  --p-button-danger-color: var(--p-danger-500);
+  --p-button-danger-hover-color: var(--p-danger-600);
+  --p-button-danger-active-color: var(--p-danger-700);
+  --p-button-warning-color: var(--p-warning-500);
+  --p-button-warning-hover-color: var(--p-warning-600);
+  --p-button-warning-active-color: var(--p-warning-700);
+  --p-button-text-primary-color: var(--p-surface-0);
+  --p-button-text-secondary-color: var(--p-surface-0);
+  --p-button-text-danger-color: var(--p-surface-0);
+  --p-button-text-warning-color: var(--p-surface-0);
+  --p-button-text-primary-hover-color: var(--p-surface-0);
+  --p-button-text-secondary-hover-color: var(--p-surface-0);
+  --p-button-text-danger-hover-color: var(--p-surface-0);
+  --p-button-text-warning-hover-color: var(--p-surface-0);
+  --p-button-text-primary-active-color: var(--p-surface-0);
+  --p-button-text-secondary-active-color: var(--p-surface-0);
+  --p-button-text-danger-active-color: var(--p-surface-0);
+  --p-button-text-warning-active-color: var(--p-surface-0); */
+}
+
+/* Dark Theme Colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --p-primary-color: var(--p-primary-400);
+  }
+}
+
+.p-inputtext {
+  border-radius: var(--p-inputtext-border-radius);
+}
+
+
 @layer tailwind-base {
   @tailwind base;
 }
 
 @layer tailwind-utilities {
   @tailwind components;
+
   @tailwind utilities;
 }

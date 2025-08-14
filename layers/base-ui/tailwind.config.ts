@@ -65,6 +65,8 @@ export default {
       },
       fontFamily: {
         "public-sans": ["Public Sans"],
+        "hind-vadodara": ["Hind Vadodara"],
+        "source-sans": ["Source Sans 3"],
         "dm-sans": ["DM Sans"],
       },
       backgroundImage: {
@@ -83,14 +85,15 @@ export default {
     },
   },
   plugins: [
+    PrimeUI,
     require("@tailwindcss/forms"),
     plugin(function ({ addBase, matchUtilities }: any) {
       addBase({
         // Default colors
         ":root": {
-          "--color-theme-1": toRGB("#4c956c"),
-          "--color-theme-2": toRGB("#006466"),
-          "--color-primary": toRGB("#4c956c"),
+          "--color-theme-1": toRGB("#003049"),
+          "--color-theme-2": toRGB("#332c2b"),
+          "--color-primary": toRGB("#332c2b"),
           "--color-secondary": toRGB(colors.slate["200"]),
           "--color-success": toRGB(colors.teal["600"]),
           "--color-info": toRGB(colors.cyan["600"]),
@@ -120,7 +123,7 @@ export default {
         // Theme 1 colors
         ".theme-1": {
           "--color-theme-1": toRGB("#3EB658"),
-          "--color-theme-2": toRGB("#338744"),
+          "--color-theme-2": toRGB("#e62129"),
           "--color-primary": toRGB("#328643"),
           "--color-secondary": toRGB("#FDEE00"),
           "--color-success": toRGB("#66bb6a"),
@@ -357,9 +360,9 @@ export default {
         },
         // Theme 15 colors
         ".theme-15": {
-          "--color-theme-1": toRGB("#4c956c"),
+          "--color-theme-1": toRGB("#fac533"),
           "--color-theme-2": toRGB("#006466"),
-          "--color-primary": toRGB("#4c956c"),
+          "--color-primary": toRGB("#fac533"),
           "--color-secondary": toRGB(colors.slate["200"]),
           "--color-success": toRGB(colors.teal["600"]),
           "--color-info": toRGB(colors.cyan["600"]),
@@ -408,6 +411,5 @@ export default {
         },
       });
     }),
-    PrimeUI,
   ],
 };
